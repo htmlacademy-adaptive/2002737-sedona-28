@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img src="../source/img/logo.svg" width="185" height="96"
+                       alt="Город Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1 class="visually-hidden">Здесь должно быть что-то хвалебное про Сейдону</h1>
+      <section class="hero">
+        <div class="hero__wrapper">
+        <h2 class="visually-hidden">Седона</h2>
+        <img style="background-color: aqua;" class="welcome-text" alt="Горы и лес" src="../source/img/sedona-form.svg" width="229" height="39">
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="reviews__wrapper">
+          <header class="reviews__header">
+            <h2 class="reviews__slogan">Оставьте свой отзыв</h2>
+            <p class="reviews__intro">
+              Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+            </p>
+          </header>
+
+          <section class="user-name">
+            <h2 class="user-name__title">Представьтесь:</h2>
+            <form class="contact-details__form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="user-name__form--first-name">
+              <label for="first-name">Имя<sup>*</sup></label>
+              <input type="text" id="first-name" name="first-name" placeholder="Пётр">
+              </p>
+              <p class="user-name__form--last-name">
+              <label for="last-name">Фамилия<sup>*</sup></label>
+              <input type="text" id="last-name" name="last-name" placeholder="Пустота">
+              </p>
+              <p class="user-name__form--patronymic">
+              <label for="patronymic">Отчество</label>
+              <input type="text" id="patronymic" name="patronymic" placeholder="Викторович">
+              </p>
+            </form>
+          </section>
+
+          <section class="contact-details">
+            <h2 class="contact-details__title">Контактная информация:</h2>
+            <form class="contact-details__form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="contact-details__form--phone">
+              <label for="phone">Контактный телефон<sup>*</sup>:</label>
+              <input type="text" id="phone" name="phone" placeholder="Введите телефон">
+              </p>
+              <p class="contact-details__form--email">
+              <label for="email">Электронная почта<sup>*</sup>:</label>
+              <input type="text" id="email" name="email" placeholder="Введите e-mail">
+              </p>
+            </form>
+          </section>
+
+          <section class="sights-visited">
+            <h2 class="visually-hidden">Общее впечатление и посещенные достопримечательности:</h2>
+            <form class="opinion-and-visited-sights__form" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="general-opinion__group">
+                <legend class="general-opinion__title">Ваше общее впечатление:</legend>
+                  <ul class="general-opinion__list">
+                    <li class="general-opinion__item">
+                      <label class="control">
+                        <input class="control-input" type="radio" name="mostly-positive" checked>
+                        Скорее положительное
+                      </label>
+                    </li>
+                    <li class="general-opinion__item">
+                      <label class="control">
+                        <input class="control-input" type="radio" name="mostly-negative">
+                        Скорее отрицательное
+                      </label>
+                    </li>
+                    <li class="general-opinion__item">
+                      <label class="control">
+                        <input class="control-input" type="radio" name="hard-to-say">
+                        Затрудняюсь ответить
+                      </label>
+                    </li>
+                  </ul>
+              </fieldset>
+
+              <fieldset class="sights-visited__group">
+                <legend class="sights-visited__title">Посещенные достопримечательности:</legend>
+                <ul class="general-opinion__list">
+                  <li class="general-opinion__item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="devils-bridge" checked>
+                      Мост Дьявола
+                    </label>
+                  </li>
+                  <li class="general-opinion__item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="bell-rock" checked>
+                      Гора-Колокол
+                    </label>
+                  </li>
+                  <li class="general-opinion__item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="slide-park" checked>
+                      Слайд-парк
+                    </label>
+                  </li>
+                  <li class="general-opinion__item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="red-rocks">
+                      Красные скалы
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </form>
+          </section>
+
+          <section class="button-submit">
+            <button class="button" value="text" type="submit">Отправить отзыв</button>
+          </section>
+
+
+          <p>
+          <small class="stats__legend">
+            * — обязательные поля
+          </small>
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__hashtag">
+          <p>#visitsedona</p>
+        </div>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Ютьюб</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
+  </html>
