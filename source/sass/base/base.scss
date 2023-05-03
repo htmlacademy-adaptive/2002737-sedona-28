@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
