@@ -1,0 +1,28 @@
+.hero-bg {
+  width: 320px;
+  height: 214px;
+  margin: 0;
+  padding: 0;
+
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.hero__title {
+  @include text-bold;
+
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.hero__description {
+  @include text-narrow;
+
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+.hero__text {
+  margin: 0;
+}

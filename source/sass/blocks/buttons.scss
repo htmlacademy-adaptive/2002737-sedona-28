@@ -1,1 +1,14 @@
-$main-color: #81b3d2;
+.button {
+  @include text-bold;
+
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  font-family: inherit;
+  color: #ffffff;
+
+  background-color: $base-color;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -2,6 +2,28 @@
   @include list-reset;
 }
 
+.advantages__wrapper {
+  background-color: $base-color;
+}
+
+.advantages__item--gray {
+  padding: 24px 8px 28px 8px;
+
+  background-color: #d6d6d6;
+}
+
+.advantages__title {
+  @include text-bold;
+}
+
+.advantages__number {
+  @include text-narrow;
+}
+
+.advantages__description {
+  @include text-narrow;
+}
+
 .advantages__attractions-list {
   @include list-reset;
 }

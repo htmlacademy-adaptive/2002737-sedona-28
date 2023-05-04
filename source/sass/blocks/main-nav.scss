@@ -13,3 +13,7 @@
 
   background-color: $base-color;
 }
+
+.site-list__item {
+  @include text-bold;
+}

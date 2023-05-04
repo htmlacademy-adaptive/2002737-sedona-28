@@ -1,5 +1,11 @@
-.search__button {
-  font-size: 21px;
+.search {
+  padding: 38px 18px 49px 18px;
+}
 
-  background-color: $main-color;
+.search__title {
+  @include text-bold;
+}
+
+.search_text {
+  @include text-narrow;
 }
