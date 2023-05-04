@@ -1,3 +1,15 @@
 .gallery__list {
   @include list-reset;
 }
+
+.gallery__title {
+  @include text-bold;
+}
+
+.gallery__item {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  border-width: 2px;
+  border-color: #00ffff;
+}

@@ -1,1 +1,54 @@
-@import "./buttons.scss";
+.form__fieldset {
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 34px;
+
+  border-color: #e5e5e5;
+  border-right: none;
+  border-bottom: 1px;
+  border-left: none;
+}
+
+.form__fieldset-title {
+  @include text-bold;
+
+  margin-bottom: 20px;
+}
+
+.form__contact-label {
+  @include text-narrow;
+}
+
+.form__contact-input {
+  @include text-bold;
+
+  background-color: #f2f2f2;
+  border-style: none;
+}
+
+.form__contact-list {
+  @include list-reset;
+}
+
+.form__options-list {
+  @include list-reset;
+}
+
+.form__options-item {
+  @include text-bold;
+
+  text-transform: none;
+}
+
+.form__feedback {
+  @include text-bold;
+
+  height: 150px;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.form__note {
+  @include text-narrow;
+}
