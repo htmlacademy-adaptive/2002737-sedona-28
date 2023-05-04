@@ -10,9 +10,14 @@ img {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   width: 320px;
+  min-height: 100%;
+  margin: 0;
 
   font-family: "PT Sans", sans-serif;
+  text-align: center;
   color: #000000;
   text-transform: uppercase;
 

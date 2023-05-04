@@ -4,12 +4,25 @@
 
 .gallery__title {
   @include text-bold;
+
+  margin-top: 15px;
 }
 
 .gallery__item {
   padding-top: 24px;
   padding-bottom: 25px;
 
-  border-width: 2px;
-  border-color: #00ffff;
+  border-top: solid 1px #e5e5e5;
+}
+
+.gallery__container {
+  margin-left: 20px;
+
+  text-align: left;
+}
+
+.gallery__photographer {
+  @include text-narrow;
+
+  text-transform: none;
 }

@@ -28,10 +28,14 @@
 
 .form__contact-list {
   @include list-reset;
+
+  text-align: left;
 }
 
 .form__options-list {
   @include list-reset;
+
+  text-align: left;
 }
 
 .form__options-item {

@@ -1,0 +1,18 @@
+.video {
+  padding-top: 17px;
+
+  border-top: solid 1px #e5e5e5;
+}
+
+.video__title {
+  @include text-bold;
+
+  margin-bottom: 24px;
+}
+
+.video__text {
+  @include text-narrow;
+
+  margin-top: 0;
+  margin-bottom: 38px;
+}
