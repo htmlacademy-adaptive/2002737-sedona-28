@@ -1,0 +1,15 @@
+.main-nav__logo {
+  margin-left: 86px;
+}
+
+.main-nav__list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: $text-color;
+
+  background-color: $base-color;
+}
