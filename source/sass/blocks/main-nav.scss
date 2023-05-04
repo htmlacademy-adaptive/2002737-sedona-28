@@ -9,11 +9,15 @@
   flex-direction: column;
   align-items: center;
 
-  color: $text-color;
+  color: #ffffff;
 
   background-color: $base-color;
 }
 
 .site-list__item {
   @include text-bold;
+}
+
+.site-list__link {
+  color: #ffffff;
 }

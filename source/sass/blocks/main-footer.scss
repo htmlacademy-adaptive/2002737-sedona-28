@@ -1,0 +1,15 @@
+.main-footer {
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+
+.main-footer__hashtag {
+  @include text-bold;
+
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-footer__copyright {
+  color: #000000;
+}
