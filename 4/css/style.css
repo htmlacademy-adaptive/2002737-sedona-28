@@ -1,14 +1,14 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT sans";
   font-display: swap;
   src: url("../fonts/ptsans.woff2") format(woff2), url("../fonts/ptsans.woff") format(woff);
 }
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT sans";
   font-display: swap;
   src: url("../fonts/ptsansbold.woff2") format(woff2), url("../fonts/ptsansbold.woff") format(woff);
 }
@@ -53,10 +53,6 @@ body {
   flex-grow: 1;
 }
 
-h2 {
-  margin: 0;
-}
-
 .list-reset {
   margin: 0;
   padding: 0;
@@ -74,37 +70,54 @@ h2 {
   clip: rect(0 0 0 0);
 }
 
+.advantages__item {
+  position: relative;
+}
+
 .advantages__container {
+  padding: 26px 35px 24px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+}
+
+.advantages__item--full:first-child .advantages__container {
+  padding-top: 71px;
+  padding-bottom: 38px;
+}
+
+.advantages__title {
+  margin: 0 0 11px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.advantages__item p {
   margin: 0;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
-.advantages__item:nth-child(3) {
-  background-color: #eeeeee;
+.advantages__description br {
+  display: none;
 }
 
-.advantages__item:nth-child(4) {
-  background-color: #eeeeee;
+.advantages__container p + p {
+  margin-top: 17px;
 }
 
-.advantages__item:nth-child(5) {
-  background-color: #eeeeee;
-}
-
-.advantages__wrapper {
+.advantages__wrapper .advantages__container {
+  padding: 39px 20px 35px;
   color: #ffffff;
   background-color: #81b3d2;
+}
+
+.advantages__wrapper .advantages__title {
+  color: #ffffff;
 }
 
 .advantages__img {
   width: 100%;
   height: 260px;
-}
-@media (min-width: 768px) {
-  .advantages__img {
-    height: auto;
-  }
 }
 
 .advantages__img img {
@@ -113,39 +126,58 @@ h2 {
   height: 100%;
 }
 
-/*
-.advantages__item--gray {
-  padding: 24px 8px 28px 8px;
-
-  background-color: #eeeeee;
-}
-*/
-.advantages__title {
-  margin: 0;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
+.advantages__services {
+  padding-bottom: 44px;
+  background-color: #ffffff;
 }
 
-.advantages__number {
-  margin: 0;
-}
-
-.advantages__description {
-  margin: 0;
+.advantages__services-item {
+  padding: 33px 15px 0 65px;
   text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-position: 18px 23px;
+  background-size: 40px 40px;
 }
 
-.advantages__attractions-item {
-  padding-left: 65px;
+.advantages__services-item .advantages__title {
+  margin-bottom: 16px;
+}
+
+.advantages__services-item--motel {
+  background-image: url("../img/svg/icon-house.svg");
+}
+
+.advantages__services-item--meal {
+  background-image: url("../img/svg/icon-burger.svg");
+}
+
+.advantages__services-item--souvenirs {
+  background-image: url("../img/svg/icon-gift.svg");
+}
+
+.advantages__services-item--souvenirs br {
+  display: none;
+}
+
+.advantages__item:not(.advantages__item--full)::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 1px;
+  background-color: #d6d6d6;
+}
+
+.advantages__item:last-child::after {
+  display: none;
 }
 
 .button {
   display: block;
   width: 284px;
   margin: 0 auto;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px 18px 16px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -176,8 +208,6 @@ h2 {
 }
 
 .form__contact-label {
-  font-size: 14px;
-  line-height: 21px;
   text-transform: uppercase;
 }
 
@@ -223,32 +253,36 @@ h2 {
   text-transform: uppercase;
 }
 
+.gallery__item {
+  padding: 24px 20px 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.gallery__img {
+  display: block;
+  height: 280px;
+}
+
+.gallery__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__container {
+  padding: 15px 0;
+}
+
+.gallery__description {
+  margin-bottom: 11px;
+}
+
 .gallery__title {
   margin: 0;
-  padding-bottom: 8px;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
   text-transform: uppercase;
-}
-
-.gallery__item {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  border-top: solid 1px #e5e5e5;
-}
-
-.gallery_image {
-  padding-bottom: 100px;
-}
-
-.gallery__description {
-  padding: 15px 0 11px;
-}
-
-.gallery__photographer {
-  font-size: 14px;
-  line-height: 21px;
 }
 
 .gallery__like {
@@ -265,6 +299,14 @@ h2 {
   cursor: pointer;
   gap: 14px;
   grid-template-columns: auto auto;
+}
+
+.gallery__like svg {
+  fill: currentColor;
+}
+
+.gallery__like span {
+  color: #000000;
 }
 
 .hero__bg {
@@ -305,9 +347,7 @@ h2 {
 }
 
 .hero__description {
-  padding: 36px 0 28px;
-  font-size: 14px;
-  line-height: 21px;
+  padding: 34px 30px 16px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -342,32 +382,24 @@ h2 {
 }
 
 .search {
-  padding: 38px 18px 49px 18px;
+  padding: 42px 18px 48px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .search__title {
-  padding-bottom: 6px;
-  font-weight: 700;
+  margin: 0 0 19px;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
 }
 
 .search__text {
-  margin: 0;
-  padding-bottom: 36px;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
+  margin: 0 0 32px;
 }
 
 .site-list__item {
-  padding-top: 17px;
-  padding-bottom: 12px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
+  padding: 20px 17px 10px;
   text-align: center;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
@@ -385,13 +417,9 @@ h2 {
 
 .social {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  width: 48px;
-  height: 48px;
-  color: #ffffff;
-  background-color: #81b3d2;
+  margin-bottom: 30px;
 }
 
 .social__link {
@@ -405,15 +433,13 @@ h2 {
 }
 
 .video {
-  padding-top: 38px;
-  padding-bottom: 49px;
+  padding: 18px 20px 0;
   text-align: center;
   text-transform: uppercase;
 }
 
 .video__title {
-  margin-bottom: 12px;
-  font-weight: 700;
+  margin: 0 0 26px;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
@@ -422,7 +448,5 @@ h2 {
 .video__text {
   margin: 0 0 38px;
   padding: 0 10px;
-  font-size: 14px;
-  line-height: 21px;
 }
 /*# sourceMappingURL=style.css.map */
