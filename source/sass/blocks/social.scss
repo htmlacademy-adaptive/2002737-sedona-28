@@ -1,10 +1,24 @@
 .social {
-  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
 
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.social__link {
   display: flex;
   justify-content: center;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  align-items: center;
+  width: 48px;
+  height: 48px;
 
-  text-align: center;
+  color: #ffffff;
+
+  background-color: #81b3d2;
 }

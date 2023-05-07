@@ -1,15 +1,19 @@
 .main-footer {
-  padding-top: 33px;
-  padding-bottom: 33px;
+  padding: 42px 20px 32px;
+
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .main-footer__hashtag {
-  @include text-bold;
-
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
   color: #000000;
   text-decoration: none;
 }
 
 .main-footer__copyright {
   color: #000000;
+  text-decoration: none;
 }

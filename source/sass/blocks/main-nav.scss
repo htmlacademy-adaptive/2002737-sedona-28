@@ -1,19 +1,6 @@
 .main-nav__list {
-  @include list-reset;
-
-  display: flex;
-  flex-direction: column;
+  display: none;
   align-items: center;
 
-  color: #ffffff;
-
   background-color: $base-color;
-}
-
-.site-list__item {
-  @include text-bold;
-}
-
-.site-list__link {
-  color: #ffffff;
 }

@@ -1,58 +1,71 @@
 .form__fieldset {
   margin: 0;
-  padding-top: 24px;
-  padding-bottom: 34px;
+  padding: 24px 20px 23px;
 
-  border-color: #e5e5e5;
-  border-right: none;
-  border-bottom: 1px;
-  border-left: none;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .form__fieldset-title {
-  @include text-bold;
+  margin: 0 0 20px;
 
-  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .form__contact-label {
-  @include text-narrow;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 
 .form__contact-input {
-  @include text-bold;
+  width: 100%;
+  height: 58px;
+  padding: 6px 12px 6px 12px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: $font-family;
+  color: #000000;
 
   background-color: #f2f2f2;
-  border-style: none;
-}
-
-.form__contact-list {
-  @include list-reset;
-
-  text-align: left;
-}
-
-.form__options-list {
-  @include list-reset;
-
-  text-align: left;
+  border: 4px solid transparent;
 }
 
 .form__options-item {
-  @include text-bold;
-
-  text-transform: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .form__feedback {
-  @include text-bold;
-
+  width: 100%;
   height: 150px;
+  padding: 15px 12px 12px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: $font-family;
+  color: #000000;
 
   background-color: #f2f2f2;
-  border: none;
+  border: 4px solid transparent;
+
+  resize: none;
 }
 
 .form__note {
-  @include text-narrow;
+  display: block;
+
+  font-size: 12px;
+  line-height: 21px;
+  text-align: right;
+  color: rgba(51, 51, 51, 0.6);
+  text-transform: uppercase;
 }

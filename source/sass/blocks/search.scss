@@ -1,11 +1,23 @@
 .search {
   padding: 38px 18px 49px 18px;
+
+  text-align: center;
 }
 
 .search__title {
-  @include text-bold;
+  padding-bottom: 6px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
 }
 
 .search__text {
-  @include text-narrow;
+  margin: 0;
+  padding-bottom: 36px;
+
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
 }

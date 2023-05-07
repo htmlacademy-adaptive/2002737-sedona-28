@@ -1,11 +1,11 @@
-.gallery__list {
-  @include list-reset;
-}
-
 .gallery__title {
-  @include text-bold;
+  margin: 0;
+  padding-bottom: 8px;
 
-  margin-top: 15px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .gallery__item {
@@ -15,14 +15,34 @@
   border-top: solid 1px #e5e5e5;
 }
 
-.gallery__container {
-  margin-left: 20px;
+.gallery_image {
+  padding-bottom: 100px;
+}
 
-  text-align: left;
+.gallery__description {
+  padding: 15px 0 11px;
 }
 
 .gallery__photographer {
-  @include text-narrow;
+  font-size: 14px;
+  line-height: 21px;
+}
 
-  text-transform: none;
+.gallery__like {
+  display: grid;
+  align-items: baseline;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: $font-family;
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  gap: 14px;
+  grid-template-columns: auto auto;
 }
