@@ -8,31 +8,51 @@
 
 @import "./base/base.scss";
 
+<<<<<<< HEAD
+=======
+@import "./base/list-reset.scss";
+
+>>>>>>> 474e62bb8cbfc7cfe15f498a7b0bae5c64e477d1
 @import "./base/visually-hidden.scss";
 
 // блоки компонентов
 @import "./blocks/advantages.scss";
 
+<<<<<<< HEAD
 @import "./blocks/buttons.scss";
 
 @import "./blocks/form.scss";
 
 @import "./blocks/form__fieldset.scss";
 
+=======
+@import "./blocks/button.scss";
+
+@import "./blocks/form.scss";
+
+>>>>>>> 474e62bb8cbfc7cfe15f498a7b0bae5c64e477d1
 @import "./blocks/gallery.scss";
 
 @import "./blocks/hero.scss";
 
 @import "./blocks/main-footer.scss";
 
+<<<<<<< HEAD
 @import "./blocks/main-header.scss";
 
+=======
+>>>>>>> 474e62bb8cbfc7cfe15f498a7b0bae5c64e477d1
 @import "./blocks/main-nav.scss";
 
 @import "./blocks/map.scss";
 
 @import "./blocks/search.scss";
 
+<<<<<<< HEAD
+=======
+@import "./blocks/site-list.scss";
+
+>>>>>>> 474e62bb8cbfc7cfe15f498a7b0bae5c64e477d1
 @import "./blocks/social.scss";
 
 @import "./blocks/video.scss";

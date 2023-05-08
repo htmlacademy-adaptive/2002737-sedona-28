@@ -1,5 +1,25 @@
+<<<<<<< HEAD
 .search__button {
   font-size: 21px;
 
   background-color: $main-color;
+=======
+.search {
+  padding: 42px 18px 48px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.search__title {
+  margin: 0 0 19px;
+
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.search__text {
+  margin: 0 0 32px;
+>>>>>>> 474e62bb8cbfc7cfe15f498a7b0bae5c64e477d1
 }

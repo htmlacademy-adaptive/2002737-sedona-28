@@ -1,5 +1,24 @@
 .social {
+<<<<<<< HEAD
   @include list-reset;
 
   display: flex;
+=======
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+
+  color: #ffffff;
+
+  background-color: #81b3d2;
+>>>>>>> 474e62bb8cbfc7cfe15f498a7b0bae5c64e477d1
 }
