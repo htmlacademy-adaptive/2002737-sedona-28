@@ -1,6 +1,4 @@
 // миксины и переменные
-@import "./mixins.scss";
-
 @import "./variables.scss";
 
 // базовые стили
@@ -13,26 +11,26 @@
 @import "./base/visually-hidden.scss";
 
 // блоки компонентов
+@import "./blocks/main-nav.scss";
+
+@import "./blocks/site-list.scss";
+
+@import "./blocks/hero.scss";
+
 @import "./blocks/advantages.scss";
 
 @import "./blocks/button.scss";
+
+@import "./blocks/search.scss";
+
+@import "./blocks/map.scss";
 
 @import "./blocks/form.scss";
 
 @import "./blocks/gallery.scss";
 
-@import "./blocks/hero.scss";
-
-@import "./blocks/main-footer.scss";
-
-@import "./blocks/main-nav.scss";
-
-@import "./blocks/map.scss";
-
-@import "./blocks/search.scss";
-
-@import "./blocks/site-list.scss";
+@import "./blocks/video.scss";
 
 @import "./blocks/social.scss";
 
-@import "./blocks/video.scss";
+@import "./blocks/main-footer.scss";

@@ -1,6 +1,78 @@
-.main-nav__list {
-  display: none;
-  align-items: center;
+.main-nav {
+  position: relative;
+}
 
-  background-color: $base-color;
+.main-nav__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+
+  display: block;
+  width: 185px;
+  height: 96px;
+
+  transform: translateX(-50%);
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 10;
+
+  display: none;
+  width: 23px;
+  height: 22px;
+
+  background-color: transparent;
+  background-image: url("../img/svg/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+
+  display: none;
+
+  background-color: #81b3d2;
+
+  @media (min-width: 768px) {
+    position: static;
+
+    display: grid;
+    justify-content: space-between;
+    width: 100%;
+
+    background-color: #ffffff;
+
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+.main-nav__list::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  height: 7px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }

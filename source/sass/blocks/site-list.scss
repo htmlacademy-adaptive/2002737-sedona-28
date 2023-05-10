@@ -4,6 +4,44 @@
   text-align: center;
 
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  &:first-child {
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+
+    @media (min-width: 768px) {
+      box-shadow: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 153px;
+
+    box-shadow: none;
+  }
+
+  @media (min-width: 1200px) {
+    width: 239px;
+  }
+
+  &:nth-child(4n-2) {
+    @media (min-width: 768px) {
+      margin-right: 76px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-right: 120px;
+    }
+  }
+
+  &:nth-child(4n-1) {
+    @media (min-width: 768px) {
+      margin-left: 76px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-left: 120px;
+    }
+  }
 }
 
 .site-list__link {
@@ -16,4 +54,40 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+}
+
+.site-list__link--current {
+  color: #766357;
+}
+
+.main-nav--open .main-nav__list {
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.main-nav--open .main-nav__toggle {
+  @media (max-width: 767px) {
+    background-image: url("../img/svg/icon-cross.svg");
+  }
+}
+
+.no-js .main-nav__toggle {
+  display: none;
+}
+
+.no-js .main-nav__list {
+  position: relative;
+
+  display: block;
+
+  @media (min-width: 768px) {
+    position: static;
+  }
 }
