@@ -1,6 +1,4 @@
 .hero__bg {
-  position: relative;
-
   padding-top: 52px;
   padding-bottom: 67px;
 
@@ -43,6 +41,14 @@
 
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 155px 66px 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 371px 65px 371px;
+  }
 }
 
 .hero__text {

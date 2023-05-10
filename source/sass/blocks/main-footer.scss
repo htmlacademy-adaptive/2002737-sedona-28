@@ -3,6 +3,17 @@
 
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 36px 60px 36px 60px;
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 36px 120px 36px 120px;
+  }
 }
 
 .main-footer__hashtag {

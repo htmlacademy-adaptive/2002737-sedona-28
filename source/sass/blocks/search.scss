@@ -1,8 +1,22 @@
 .search {
-  padding: 42px 18px 48px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 38px 29px 65px 29px;
 
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    margin: 60px 155px 55px 155px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 458px;
+    margin: 60px 382px 66px 382px;
+    padding: 0;
+  }
 }
 
 .search__title {
@@ -15,4 +29,14 @@
 
 .search__text {
   margin: 0 0 32px;
+}
+
+.search__button {
+  margin: 0;
+  padding: 16px 49px 16px 49px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    padding: 16px 121px 16px 121px;
+  }
 }
