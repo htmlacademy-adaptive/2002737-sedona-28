@@ -117,13 +117,5 @@
 
   @media (min-width: 768px) {
     position: static;
-
-    display: grid;
-    justify-content: space-between;
-    width: 100%;
-
-    background-color: #ffffff;
-
-    grid-template-columns: repeat(4, auto);
   }
 }
