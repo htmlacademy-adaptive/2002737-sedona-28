@@ -5,10 +5,22 @@
 
   color: #000000;
   text-decoration: none;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }
 
 .copyright svg {
   fill: currentColor;
+}
+
+.copyright__icon {
+  fill: #000000;
 }
 
 .copyright__text {
