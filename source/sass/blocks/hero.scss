@@ -1,7 +1,6 @@
 .hero__bg {
   position: relative;
 
-  margin-top: 56px;
   padding-top: 52px;
   padding-bottom: 67px;
 
@@ -10,10 +9,6 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-
-  @media (min-width: 768px) {
-    margin: 0;
-  }
 }
 
 .hero__bg::after {

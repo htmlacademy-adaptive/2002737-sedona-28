@@ -44,6 +44,7 @@
 
 .site-list__link {
   display: inline-block;
+  padding: 17px 80px 12px 80px;
 
   font-weight: 700;
   font-size: 18px;
@@ -60,27 +61,12 @@
     line-height: 21px;
     color: #000000;
 
-    &:hover {
+    &:hover &:focus {
       color: #81b3d2;
     }
 
     &:active {
-      opacity: 30%;
-    }
-  }
-
-  @media (max-width: $mobile-width-only) {
-    padding: 17px 80px 12px 80px;
-
-    &:hover,
-    &:focus {
-      background-color: #669ec0;
-    }
-
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-
-      background-color: #5496bd;
+      color: rgba(0, 0, 0, 0.3);
     }
   }
 }
