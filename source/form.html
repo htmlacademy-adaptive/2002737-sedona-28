@@ -8,7 +8,7 @@
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<!-- Класс no-js добавляем, когда в браузере не работает js -->
+<!-- Класс no-js добавляется при неработающем JS в браузере -->
 
 <body class="body no-js">
   <header class="main-header">
@@ -17,7 +17,7 @@
       <a class="main-nav__logo" href="index.html" aria-current="page">
         <img src="./img/svg/logo.svg" width="185" height="96" alt="Город Седона">
       </a>
-      <button class="main-nav__toggle no-js" type="button">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list site-list list-reset">
@@ -38,10 +38,11 @@
   </header>
 
   <main class="main-container">
-    <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+
     <section class="hero">
+      <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
       <div class="hero__bg">
-        <h2 class="visually-hidden">Седона</h2>
+        <h1 class="visually-hidden">Седона</h1>
         <img alt="Горы и лес" src="./img/svg/sedona-form.svg" width="229" height="39">
       </div>
 
@@ -88,7 +89,7 @@
         </div>
 
         <fieldset class="form__fieldset form__fieldset--feedback">
-          <h2 class="form__fieldset-title">Ваше общее впечатление:</h2>
+          <h2 class="form__fieldset-title form__fieldset-title--lines"><span>Ваше общее впечатление:</span></h2>
           <ul class="form__options-list list-reset">
             <li class="form__options-item">
               <input class="form__options-input form__options-input--radio" type="radio" name="feedback" value="Положительное" id="positive" checked>
@@ -105,8 +106,8 @@
           </ul>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--attractions">
-          <h2 class="form__fieldset-title">
-            Посещенные достопримечательности:
+          <h2 class="form__fieldset-title form__fieldset-title--lines"><span>
+              Посещенные достопримечательности:</span>
           </h2>
           <ul class="form__options-list list-reset">
             <li class="form__options-item">
@@ -129,14 +130,12 @@
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--description">
-          <h2 class="form__fieldset-title">Опишите свои эмоции:</h2>
+          <h2 class="form__fieldset-title form__fieldset-title--lines"><span>Опишите свои эмоции:</span></h2>
           <textarea class="form__message" id="recall-field" name="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--submit">
-          <button class="form__submit button" type="submit">
-            Отправить отзыв
-          </button>
+          <button class="form__submit button" type="submit">Отправить отзыв</button>
           <span class="form__note">* — обязательные поля</span>
         </fieldset>
 
