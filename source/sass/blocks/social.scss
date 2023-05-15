@@ -2,11 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 30px 20px 37px;
+  padding: 30px 20px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 }
 
-.social__item:not(:last-child) {
-  padding-right: 6px;
+.social__item {
+  margin: 0 3px;
 }
 
 .social__link {
@@ -30,4 +34,8 @@
 
     background-color: #5496bd;
   }
+}
+
+.social__link svg {
+  fill: currentColor;
 }

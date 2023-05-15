@@ -44,7 +44,6 @@
 
 .site-list__link {
   display: inline-block;
-  padding: 17px 80px 12px 80px;
 
   font-weight: 700;
   font-size: 18px;
@@ -55,13 +54,12 @@
   text-decoration: none;
 
   @media (min-width: 768px) {
-    padding: 18px 5px 17px;
-
     font-size: 14px;
     line-height: 21px;
     color: #000000;
 
-    &:hover &:focus {
+    &:hover,
+    &:focus {
       color: #81b3d2;
     }
 
@@ -69,12 +67,13 @@
       color: rgba(0, 0, 0, 0.3);
     }
   }
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    padding: 18px 17px 12px;
+  }
 }
 
 .site-list__link--current {
   color: #766357;
-
-  @media (max-width: $mobile-width-only) {
-    color: #ffffff;
-  }
 }
