@@ -1,5 +1,5 @@
 .main-footer {
-  padding: 33px 20px 40px;
+  padding: 35px 20px 34px;
 
   text-align: center;
   text-transform: uppercase;
@@ -9,6 +9,18 @@
     justify-content: space-between;
     align-items: center;
     padding: 37px 60px 34px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 37px 120px 34px;
+  }
+}
+
+.main-footer--index {
+  padding-top: 42px;
+
+  @media (min-width: 768px) {
+    padding-top: 36px;
   }
 
   @media (min-width: 1200px) {
