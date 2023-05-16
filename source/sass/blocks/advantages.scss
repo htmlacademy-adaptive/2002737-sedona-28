@@ -25,7 +25,7 @@
 }
 
 .advantages__container {
-  padding: 26px 35px 24px;
+  padding: 25px 35px;
 
   text-align: center;
   text-transform: uppercase;
@@ -49,7 +49,7 @@
 }
 
 .advantages__item--full:first-child .advantages__container {
-  padding-top: 71px;
+  padding-top: 70px;
   padding-bottom: 38px;
 
   @media (min-width: 768px) {
@@ -89,7 +89,7 @@
   color: #000000;
 
   @media (min-width: 768px) {
-    // margin: 0 0 11px;
+    margin: 0 0 11px;
     padding: 0 20px;
 
     font-size: 21px;
@@ -124,6 +124,14 @@
   color: #ffffff;
 
   background-color: #81b3d2;
+
+  @media (min-width: 768px) {
+    padding: 53px 30px 21px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 53px 83px 35px;
+  }
 }
 
 .advantages__wrapper .advantages__title {
@@ -185,6 +193,10 @@
 
 .advantages__services-item .advantages__title {
   margin-bottom: 16px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 22px;
+  }
 }
 
 .advantages__services-item--motel {
@@ -193,17 +205,21 @@
   @media (min-width: 768px) {
     background-size: 77px 72px;
   }
+
+  @media (min-width: 1200px) {
+    background-size: 79px 72px;
+  }
 }
 
 .advantages__services-item--meal {
   background-image: url("../img/svg/icon-burger.svg");
 
   @media (min-width: 768px) {
-    background-size: 80px 67px;
+    background-size: 80px 68px;
   }
 
   @media (min-width: 1200px) {
-    background-size: 72px 72px;
+    background-size: 73px 69px;
   }
 }
 
@@ -211,11 +227,11 @@
   background-image: url("../img/svg/icon-gift.svg");
 
   @media (min-width: 768px) {
-    background-size: 85px 80px;
+    background-size: 67px 75px;
   }
 
   @media (min-width: 1200px) {
-    background-size: 93px 77px;
+    background-size: 77px 75px;
   }
 }
 

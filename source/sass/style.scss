@@ -11,6 +11,8 @@
 @import "./base/visually-hidden.scss";
 
 // блоки компонентов
+@import "./blocks/main-header.scss";
+
 @import "./blocks/main-nav.scss";
 
 @import "./blocks/site-list.scss";
@@ -34,3 +36,5 @@
 @import "./blocks/social.scss";
 
 @import "./blocks/main-footer.scss";
+
+@import "./blocks/copyright.scss";

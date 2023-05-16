@@ -2,7 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 30px;
+  padding: 30px 20px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+}
+
+.social__item {
+  margin: 0 3px;
 }
 
 .social__link {
@@ -15,4 +23,19 @@
   color: #ffffff;
 
   background-color: #81b3d2;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #5496bd;
+  }
+}
+
+.social__link svg {
+  fill: currentColor;
 }
