@@ -10,12 +10,22 @@
   background-position: bottom;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-background-mobile@2x.jpg");
+    background-size: 640px auto;
+  }
+
   @media (min-width: 768px) {
     margin: 0;
     padding-top: 95px;
     padding-bottom: 117px;
 
     background-image: url("../img/hero-background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-background-tablet@2x.jpg");
+      background-size: 1536px auto;
+    }
   }
 
   @media (min-width: 1200px) {
@@ -24,6 +34,11 @@
     padding-bottom: 121px;
 
     background-image: url("../img/hero-background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-background-desktop@2x.jpg");
+      background-size: 2400px auto;
+    }
   }
 }
 
