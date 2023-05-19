@@ -1,3 +1,6 @@
+import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
+import rename from 'gulp-rename';
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
@@ -32,6 +35,17 @@ const server = (done) => {
   done();
 }
 
+// Sprite
+export const sprite = () => {
+  return gulp.src('source/img/sprite/*.svg')
+    .pipe(svgo())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('source/img'));
+}
+
 // Watcher
 
 const watcher = () => {
@@ -41,5 +55,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  styles, server, watcher
+  styles, sprite, server, watcher
 );
