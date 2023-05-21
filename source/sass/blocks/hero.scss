@@ -93,7 +93,7 @@
 }
 
 .hero__description {
-  padding: 39px 20px 36px;
+  padding: 40px 20px 36px;
 
   text-align: center;
   text-transform: uppercase;
@@ -101,7 +101,7 @@
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: 768px) {
-    padding: 68px 60px 35px;
+    padding: 65px 60px 35px;
 
     border: none;
   }
@@ -112,7 +112,7 @@
 }
 
 .hero--index .hero__description {
-  padding: 34px 30px 16px;
+  padding: 33px 30px 16px;
 
   @media (min-width: 768px) {
     padding: 50px 80px 55px;
@@ -125,7 +125,8 @@
 }
 
 .hero--form .hero__description {
-  padding-bottom: 26px;
+  padding-top: 38px;
+  padding-bottom: 27px;
 
   @media (min-width: 768px) {
     padding-top: 64px;
@@ -146,7 +147,7 @@
   color: #000000;
 
   @media (min-width: 768px) {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
 
     font-size: 30px;
   }

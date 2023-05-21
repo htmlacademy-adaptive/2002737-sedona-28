@@ -116,6 +116,10 @@
 
 .advantages__container p + p {
   margin-top: 17px;
+
+  @media (min-width: 768px) {
+    margin-top: 24px;
+  }
 }
 
 .advantages__wrapper .advantages__container {
