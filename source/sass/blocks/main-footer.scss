@@ -1,5 +1,5 @@
 .main-footer {
-  padding: 35px 20px 34px;
+  padding: 33px 20px 34px;
 
   text-align: center;
   text-transform: uppercase;
@@ -17,7 +17,7 @@
 }
 
 .main-footer--index {
-  padding-top: 35px;
+  padding-top: 44px;
 
   @media (min-width: 768px) {
     padding-top: 36px;
@@ -34,6 +34,17 @@
   line-height: 26px;
   color: #000000;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #81b3d2;
+
+    outline: none;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }
 
 .main-footer__copyright {

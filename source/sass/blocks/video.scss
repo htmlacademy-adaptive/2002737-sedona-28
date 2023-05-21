@@ -86,4 +86,14 @@
   border: none;
   transform: translate(-50%, -50%);
   opacity: 0.7;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

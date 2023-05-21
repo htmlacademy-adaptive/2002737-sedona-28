@@ -93,7 +93,7 @@
 }
 
 .hero__description {
-  padding: 35px 20px 36px;
+  padding: 40px 20px 36px;
 
   text-align: center;
   text-transform: uppercase;
@@ -107,7 +107,7 @@
   }
 
   @media (min-width: 1200px) {
-    padding: 116px 60px 28px;
+    padding: 98px 60px 43px;
   }
 }
 
@@ -125,7 +125,8 @@
 }
 
 .hero--form .hero__description {
-  padding-bottom: 26px;
+  padding-top: 38px;
+  padding-bottom: 27px;
 
   @media (min-width: 768px) {
     padding-top: 64px;
@@ -146,7 +147,7 @@
   color: #000000;
 
   @media (min-width: 768px) {
-    margin-bottom: 20px;
+    margin-bottom: 33px;
 
     font-size: 30px;
   }

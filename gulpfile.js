@@ -73,7 +73,7 @@ const svg = () => {
     .pipe(gulp.dest('build/img'));
 }
 
-const sprite = () => {
+export const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
@@ -89,6 +89,7 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
+    'source/manifest.webmanifest',
   ], {
     base: 'source'
   })
