@@ -10,6 +10,9 @@
   <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="./manifest.webmanifest">
+
+  <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <!-- Класс no-js добавляется при неработающем JS в браузере -->
@@ -44,7 +47,6 @@
   <main class="main-container">
 
     <section class="hero hero--form">
-      <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
       <div class="hero__bg">
         <h1 class="visually-hidden">Седона</h1>
         <img alt="Горы и лес" src="./img/svg/sedona-form.svg" width="229" height="39">
@@ -140,7 +142,8 @@
           <h2 class="form__title form__title--lines">
             <span>Опишите свои эмоции:</span>
           </h2>
-          <textarea class="form__text" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+          <label class="visually-hidden" for="comment">Опишите подробно</label>
+          <textarea class="form__text" id="comment" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--submit">
           <button class="form__submit button" type="submit">Отправить отзыв</button>
